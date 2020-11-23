@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t stephengrider/docker-react -f Dockerfile.dev .
+  - docker build -t cbienaime/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run stephengrider/docker-react npm run test
+  - docker run cbienaime/docker-react npm run test
